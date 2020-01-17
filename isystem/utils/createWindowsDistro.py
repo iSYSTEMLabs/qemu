@@ -1,13 +1,16 @@
+#!/usr/bin/python3
 # This script builds quemu and creates distributables. See help for more info.
 
 import sys
 import os
+import re
 import glob
 import subprocess
 import time
 import shutil
 import argparse
 import shutil
+import pathlib 
 
 g_isVerbose = False
 BIN_DIR = 'build'
@@ -15,6 +18,7 @@ DOCKER_DIR_GLOB = 'docker-src*'
 DIST_DIR = 'dist'
 ZIP_FILE_NAME = 'qemu-isystem'
 ZIP_FILE_EXT = 'zip'
+NETWORK_DIST_DIR = '/media/sf_qemu' # this dir must be shared in VM
 
 def log(msg: str):
     if g_isVerbose:
@@ -25,6 +29,18 @@ def remove_docker_dirs():
     host_dirs = glob.glob(DOCKER_DIR_GLOB)
     for host_dir in host_dirs:
         shutil.rmtree(host_dir)
+
+
+def get_latest_host_dir():
+    dockerDirs = glob.glob(DOCKER_DIR_GLOB)
+
+    if not dockerDirs:
+        raise Exception("No dir with docker output exists! Run build first.")
+
+    if len(dockerDirs) == 1:
+        return dockerDirs[0]
+
+    return dockerDirs.sort()[-1]
 
 
 def create_host_dir():
@@ -56,10 +72,14 @@ def _docker_build(docker_host_dir, targets):
     isVerbose = 0
     if g_isVerbose:  # Option: V=1 for verbose build
         isVerbose = 1
+
+    homeDir = pathlib.Path.home()
+    curDir = os.getcwd()
     targetsStr = ','.join(targets).replace(',', '-softmmu,') + '-softmmu'
+
     cmd = 'sudo -n docker run --label com.qemu.instance.uuid=isystemBuild -u 1000 --security-opt seccomp=unconfined --rm --net=none ' + \
          f'-e TARGET_LIST={targetsStr} -e EXTRA_CONFIGURE_OPTS= -e V={isVerbose} -e J=12 -e DEBUG= -e SHOW_ENV= -e CCACHE_DIR=/var/tmp/ccache ' + \
-         f'-v /home/isystem/.cache/qemu-docker-ccache:/var/tmp/ccache:z -v /home/isystem/proj/qemu/{docker_host_dir}:/var/tmp/qemu ' + \
+         f'-v {homeDir}/.cache/qemu-docker-ccache:/var/tmp/ccache:z -v {curDir}/{docker_host_dir}:/var/tmp/qemu ' + \
           ' qemu:fedora /var/tmp/qemu/run ../../isystem/dockerBuild.sh'
 
     log('Start docker for build and copy: ' + cmd)
@@ -112,6 +132,55 @@ def _check_dlls(out_dir, arch: str, targets):
 def _zip_files(out_dir):
     log("Zipping ...")
     shutil.make_archive(ZIP_FILE_NAME, ZIP_FILE_EXT, os.path.join(out_dir, DIST_DIR))
+
+
+def copytree(src, dst, ignore_patterns=[]):
+    errors = []
+    names = os.listdir(src)
+    for name in names:
+        isSkip = False
+        for pattern in ignore_patterns:
+            if re.match(pattern, name):
+                log(f"Skipping '{name}' because it matches '{pattern}'.")
+                isSkip = True
+
+        if isSkip:
+            continue
+
+        print('#', end='')
+        sys.stdout.flush()
+        srcname = os.path.join(src, name)
+        dstname = os.path.join(dst, name)
+        try:
+            if os.path.isdir(srcname):
+                os.mkdir(dstname)
+                copytree(srcname, dstname)
+            else:
+                shutil.copy2(srcname, dstname)
+
+        except OSError as ex:
+            log(str(ex) + "  Copying: " + srcname + ' --> ' + dstname)
+            errors.append((srcname, dstname, str(ex)))
+
+    if errors:
+        raise Exception(errors)
+
+
+def copy_to_G(hostDir, winSharedDir):
+    srcDir = os.path.join(hostDir, DIST_DIR)
+    excludedFiles = ['qemu-system-armw.exe', 'qemu-system-aarchw.exe']
+
+    # clean dest dir to avoid distributing old files
+    files = os.listdir(winSharedDir)
+    for fname in files:
+        fpath = os.path.join(winSharedDir, fname)
+        if os.path.isdir(fpath):
+            shutil.rmtree(fpath)
+        else:
+            os.remove(fpath)
+
+    copytree(srcDir, winSharedDir, ['.*w.exe$', '.*ppc.exe$', '.*ppc64.exe$',
+                                    '.*tricore.exe$'])
 
 
 #def stop_docker():
@@ -221,7 +290,14 @@ Examples:
                         help="Writes more info during execution.")
 
     parser.add_argument("-r", '--rmhostdirs', dest="isRmHostDirs", action='store_true', default=False,
-                        help=f"Removes dirs starting with '{DOCKER_DIR_GLOB}' from previous docker runs.")
+                        help=f"Removes dirs starting with '{DOCKER_DIR_GLOB}' "
+                              "from previous docker runs. Recommended with build command.")
+
+    parser.add_argument("-b", '--build', dest="isBuild", action='store_true', default=False,
+                        help=f"Runs build action. Results are in dir qemu/docker-src<timestamp>.")
+
+    parser.add_argument("-d", '--deploy', dest="isDeploy", action='store_true', default=False,
+                        help=f"Copies qemu executables and DLLs for Windows to shared dir {NETWORK_DIST_DIR}.")
 
     targets = ['arm', 'aarch64', 'ppc', 'ppc64', 'tricore', 'rh850']
 
@@ -250,15 +326,23 @@ def main():
     if args.isRmHostDirs:
         remove_docker_dirs()
 
-    for arch in args.arch:
-        hostDir = create_host_dir()
-        log('Host dir successfully created: ' + hostDir)
-        _docker_build(hostDir, args.targets)
-        # hostDir = 'docker-src.2019-09-11-15.06.09.6052'
-        _check_dlls(hostDir, '', [])
-        shutil.copytree('isystem/window-icons/share', os.path.join(hostDir, DIST_DIR, 'share'))
-        _zip_files(hostDir)
-        shutil.copy2(f'{ZIP_FILE_NAME}.{ZIP_FILE_EXT}', '/media/sf_kubuntu1704/')
+    hostDir = ''
+    if args.isBuild:
+        for arch in args.arch:
+            hostDir = create_host_dir()
+            log('Host dir successfully created: ' + hostDir)
+            _docker_build(hostDir, args.targets)
+            # hostDir = 'docker-src.2019-09-11-15.06.09.6052'
+            _check_dlls(hostDir, '', [])
+            shutil.copytree('isystem/window-icons/share', os.path.join(hostDir, DIST_DIR, 'share'))
+            # _zip_files(hostDir)
+            # shutil.copy2(f'{ZIP_FILE_NAME}.{ZIP_FILE_EXT}', '/media/sf_kubuntu1704/')
+
+    if args.isDeploy:
+        if not hostDir:
+            hostDir = get_latest_host_dir()
+        print(f'Copying files to {NETWORK_DIST_DIR} ...')
+        copy_to_G(hostDir, NETWORK_DIST_DIR)
 
 
 if __name__ == '__main__':
