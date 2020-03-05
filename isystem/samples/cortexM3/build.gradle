@@ -29,7 +29,7 @@ model {
 
             target("arm")
 
-            def gccForCpp = "/home/isystem/bin/arm-none-eabi-g++";
+            def gccForCpp = "/home/markok/bin/arm-none-eabi-g++";
             
             def os = System.getProperty("os.name", "generic").toLowerCase(Locale.ENGLISH);
             def isWindows = os.startsWith("windows");

@@ -8,7 +8,7 @@
       <VersionLow>1</VersionLow>
      </REG_HEADER>
      <REG_ROOT>
-      <RegVer>1279787008</RegVer>
+      <RegVer>1279660032</RegVer>
       <EditorPersist>
        <EditorPersist>
         <__.0>
@@ -19,6 +19,14 @@
          <FileType>0</FileType>
          <ScrollPos>278</ScrollPos>
         </__.0>
+        <__.1>
+         <BookmarkList></BookmarkList>
+         <CaretPos>0</CaretPos>
+         <Encoding>1</Encoding>
+         <FileName>Z:\home\markok\proj\qemu\isystem\samples\rh850\RH850_F1L_IAR\cstartup.s</FileName>
+         <FileType>0</FileType>
+         <ScrollPos>0</ScrollPos>
+        </__.1>
        </EditorPersist>
       </EditorPersist>
      </REG_ROOT>
@@ -32,7 +40,7 @@
       <VersionLow>1</VersionLow>
      </REG_HEADER>
      <REG_ROOT>
-      <RegVer>1279787008</RegVer>
+      <RegVer>1279660032</RegVer>
       <ANGUIData.0>
        <Filetime type="B">KCKLHCLBICFDMNAB</Filetime>
        <GUID type="B">PFGFPEGMLPEIIPEAIMCDECFBLDPHMGGM</GUID>
@@ -85,6 +93,14 @@
            <Column>0</Column>
            <Direction>1</Direction>
           </Sort>
+          <Tree>
+           <Reorder>1</Reorder>
+           <Selected></Selected>
+           <StateItem>
+            <Name></Name>
+            <Options>0</Options>
+           </StateItem>
+          </Tree>
          </AreaAux>
          <AreaCode>
           <Height>0</Height>
@@ -96,6 +112,14 @@
            <Column>0</Column>
            <Direction>1</Direction>
           </Sort>
+          <Tree>
+           <Reorder>1</Reorder>
+           <Selected></Selected>
+           <StateItem>
+            <Name></Name>
+            <Options>0</Options>
+           </StateItem>
+          </Tree>
          </AreaCode>
          <AreaData>
           <Height>0</Height>
@@ -107,6 +131,14 @@
            <Column>0</Column>
            <Direction>1</Direction>
           </Sort>
+          <Tree>
+           <Reorder>1</Reorder>
+           <Selected></Selected>
+           <StateItem>
+            <Name></Name>
+            <Options>0</Options>
+           </StateItem>
+          </Tree>
          </AreaData>
          <ColumnWidth.0>
           <Pos type="D">0.0000000000000000</Pos>
@@ -132,6 +164,14 @@
            <Column>0</Column>
            <Direction>1</Direction>
           </Sort>
+          <Tree>
+           <Reorder>1</Reorder>
+           <Selected></Selected>
+           <StateItem>
+            <Name></Name>
+            <Options>0</Options>
+           </StateItem>
+          </Tree>
          </AreaAux>
          <AreaCode>
           <Height>50</Height>
@@ -143,6 +183,14 @@
            <Column>0</Column>
            <Direction>1</Direction>
           </Sort>
+          <Tree>
+           <Reorder>1</Reorder>
+           <Selected></Selected>
+           <StateItem>
+            <Name></Name>
+            <Options>0</Options>
+           </StateItem>
+          </Tree>
          </AreaCode>
          <AreaData>
           <Height>50</Height>
@@ -154,6 +202,14 @@
            <Column>0</Column>
            <Direction>1</Direction>
           </Sort>
+          <Tree>
+           <Reorder>1</Reorder>
+           <Selected></Selected>
+           <StateItem>
+            <Name></Name>
+            <Options>0</Options>
+           </StateItem>
+          </Tree>
          </AreaData>
          <ColumnWidth.0>
           <Pos type="D">0.0000000000000000</Pos>
@@ -180,7 +236,6 @@
          <ViewSettings>
           <CurrentContextIndex>65535</CurrentContextIndex>
           <HideAreasWithNoActivity>False</HideAreasWithNoActivity>
-          <ViewTitle>Profiler Timeline</ViewTitle>
           <Pane>
            <AreaAux>
             <Height>100</Height>
@@ -192,6 +247,14 @@
              <Column>0</Column>
              <Direction>1</Direction>
             </Sort>
+            <Tree>
+             <Reorder>1</Reorder>
+             <Selected></Selected>
+             <StateItem>
+              <Name></Name>
+              <Options>0</Options>
+             </StateItem>
+            </Tree>
            </AreaAux>
            <AreaCode>
             <Height>0</Height>
@@ -203,6 +266,14 @@
              <Column>0</Column>
              <Direction>1</Direction>
             </Sort>
+            <Tree>
+             <Reorder>1</Reorder>
+             <Selected></Selected>
+             <StateItem>
+              <Name></Name>
+              <Options>0</Options>
+             </StateItem>
+            </Tree>
            </AreaCode>
            <AreaData>
             <Height>0</Height>
@@ -214,6 +285,14 @@
              <Column>0</Column>
              <Direction>1</Direction>
             </Sort>
+            <Tree>
+             <Reorder>1</Reorder>
+             <Selected></Selected>
+             <StateItem>
+              <Name></Name>
+              <Options>0</Options>
+             </StateItem>
+            </Tree>
            </AreaData>
            <ColumnWidth.0>
             <Pos type="D">0.0000000000000000</Pos>
@@ -259,12 +338,10 @@
          <StatAreaName></StatAreaName>
          <StatFromTime type="B">AAAAAAAAAAAAAAAA</StatFromTime>
          <StatFullName></StatFullName>
-         <StatToTime type="B">AAAAAAAAAAAAAAAA</StatToTime>
          <StatType>0</StatType>
          <CommonView>
           <CurrentContextIndex>65535</CurrentContextIndex>
           <HideAreasWithNoActivity>False</HideAreasWithNoActivity>
-          <ViewTitle>Profiler Statistics</ViewTitle>
           <Pane>
            <AreaAux>
             <Height>0</Height>
@@ -276,6 +353,14 @@
              <Column>0</Column>
              <Direction>1</Direction>
             </Sort>
+            <Tree>
+             <Reorder>1</Reorder>
+             <Selected></Selected>
+             <StateItem>
+              <Name></Name>
+              <Options>0</Options>
+             </StateItem>
+            </Tree>
            </AreaAux>
            <AreaCode>
             <Height>50</Height>
@@ -287,6 +372,14 @@
              <Column>0</Column>
              <Direction>1</Direction>
             </Sort>
+            <Tree>
+             <Reorder>1</Reorder>
+             <Selected></Selected>
+             <StateItem>
+              <Name></Name>
+              <Options>0</Options>
+             </StateItem>
+            </Tree>
            </AreaCode>
            <AreaData>
             <Height>50</Height>
@@ -298,6 +391,14 @@
              <Column>0</Column>
              <Direction>1</Direction>
             </Sort>
+            <Tree>
+             <Reorder>1</Reorder>
+             <Selected></Selected>
+             <StateItem>
+              <Name></Name>
+              <Options>0</Options>
+             </StateItem>
+            </Tree>
            </AreaData>
            <ColumnWidth.0>
             <Pos type="D">0.0000000000000000</Pos>
@@ -368,6 +469,14 @@
            <Column>0</Column>
            <Direction>1</Direction>
           </Sort>
+          <Tree>
+           <Reorder>1</Reorder>
+           <Selected></Selected>
+           <StateItem>
+            <Name></Name>
+            <Options>0</Options>
+           </StateItem>
+          </Tree>
          </AreaAux>
          <AreaCode>
           <Height>50</Height>
@@ -379,6 +488,14 @@
            <Column>0</Column>
            <Direction>1</Direction>
           </Sort>
+          <Tree>
+           <Reorder>1</Reorder>
+           <Selected></Selected>
+           <StateItem>
+            <Name></Name>
+            <Options>0</Options>
+           </StateItem>
+          </Tree>
          </AreaCode>
          <AreaData>
           <Height>50</Height>
@@ -390,6 +507,14 @@
            <Column>0</Column>
            <Direction>1</Direction>
           </Sort>
+          <Tree>
+           <Reorder>1</Reorder>
+           <Selected></Selected>
+           <StateItem>
+            <Name></Name>
+            <Options>0</Options>
+           </StateItem>
+          </Tree>
          </AreaData>
          <ColumnWidth.0>
           <Pos type="D">0.0000000000000000</Pos>
@@ -415,6 +540,14 @@
            <Column>0</Column>
            <Direction>1</Direction>
           </Sort>
+          <Tree>
+           <Reorder>1</Reorder>
+           <Selected></Selected>
+           <StateItem>
+            <Name></Name>
+            <Options>0</Options>
+           </StateItem>
+          </Tree>
          </AreaAux>
          <AreaCode>
           <Height>50</Height>
@@ -426,6 +559,14 @@
            <Column>0</Column>
            <Direction>1</Direction>
           </Sort>
+          <Tree>
+           <Reorder>1</Reorder>
+           <Selected></Selected>
+           <StateItem>
+            <Name></Name>
+            <Options>0</Options>
+           </StateItem>
+          </Tree>
          </AreaCode>
          <AreaData>
           <Height>50</Height>
@@ -437,6 +578,14 @@
            <Column>0</Column>
            <Direction>1</Direction>
           </Sort>
+          <Tree>
+           <Reorder>1</Reorder>
+           <Selected></Selected>
+           <StateItem>
+            <Name></Name>
+            <Options>0</Options>
+           </StateItem>
+          </Tree>
          </AreaData>
          <ColumnWidth.0>
           <Pos type="D">0.0000000000000000</Pos>
@@ -463,7 +612,6 @@
          <ViewSettings>
           <CurrentContextIndex>65535</CurrentContextIndex>
           <HideAreasWithNoActivity>False</HideAreasWithNoActivity>
-          <ViewTitle>Profiler Timeline</ViewTitle>
           <Pane>
            <AreaAux>
             <Height>0</Height>
@@ -475,6 +623,14 @@
              <Column>0</Column>
              <Direction>1</Direction>
             </Sort>
+            <Tree>
+             <Reorder>1</Reorder>
+             <Selected></Selected>
+             <StateItem>
+              <Name></Name>
+              <Options>0</Options>
+             </StateItem>
+            </Tree>
            </AreaAux>
            <AreaCode>
             <Height>50</Height>
@@ -486,6 +642,14 @@
              <Column>0</Column>
              <Direction>1</Direction>
             </Sort>
+            <Tree>
+             <Reorder>1</Reorder>
+             <Selected></Selected>
+             <StateItem>
+              <Name></Name>
+              <Options>0</Options>
+             </StateItem>
+            </Tree>
            </AreaCode>
            <AreaData>
             <Height>50</Height>
@@ -497,6 +661,14 @@
              <Column>0</Column>
              <Direction>1</Direction>
             </Sort>
+            <Tree>
+             <Reorder>1</Reorder>
+             <Selected></Selected>
+             <StateItem>
+              <Name></Name>
+              <Options>0</Options>
+             </StateItem>
+            </Tree>
            </AreaData>
            <ColumnWidth.0>
             <Pos type="D">0.0000000000000000</Pos>
@@ -542,12 +714,10 @@
          <StatAreaName></StatAreaName>
          <StatFromTime type="B">AAAAAAAAAAAAAAAA</StatFromTime>
          <StatFullName></StatFullName>
-         <StatToTime type="B">AAAAAAAAAAAAAAAA</StatToTime>
          <StatType>0</StatType>
          <CommonView>
           <CurrentContextIndex>65535</CurrentContextIndex>
           <HideAreasWithNoActivity>False</HideAreasWithNoActivity>
-          <ViewTitle>Profiler Statistics</ViewTitle>
           <Pane>
            <AreaAux>
             <Height>0</Height>
@@ -559,6 +729,14 @@
              <Column>0</Column>
              <Direction>1</Direction>
             </Sort>
+            <Tree>
+             <Reorder>1</Reorder>
+             <Selected></Selected>
+             <StateItem>
+              <Name></Name>
+              <Options>0</Options>
+             </StateItem>
+            </Tree>
            </AreaAux>
            <AreaCode>
             <Height>50</Height>
@@ -570,6 +748,14 @@
              <Column>0</Column>
              <Direction>1</Direction>
             </Sort>
+            <Tree>
+             <Reorder>1</Reorder>
+             <Selected></Selected>
+             <StateItem>
+              <Name></Name>
+              <Options>0</Options>
+             </StateItem>
+            </Tree>
            </AreaCode>
            <AreaData>
             <Height>50</Height>
@@ -581,6 +767,14 @@
              <Column>0</Column>
              <Direction>1</Direction>
             </Sort>
+            <Tree>
+             <Reorder>1</Reorder>
+             <Selected></Selected>
+             <StateItem>
+              <Name></Name>
+              <Options>0</Options>
+             </StateItem>
+            </Tree>
            </AreaData>
            <ColumnWidth.0>
             <Pos type="D">0.0000000000000000</Pos>
@@ -651,6 +845,14 @@
            <Column>0</Column>
            <Direction>1</Direction>
           </Sort>
+          <Tree>
+           <Reorder>1</Reorder>
+           <Selected></Selected>
+           <StateItem>
+            <Name></Name>
+            <Options>0</Options>
+           </StateItem>
+          </Tree>
          </AreaAux>
          <AreaCode>
           <Height>50</Height>
@@ -662,6 +864,14 @@
            <Column>0</Column>
            <Direction>1</Direction>
           </Sort>
+          <Tree>
+           <Reorder>1</Reorder>
+           <Selected></Selected>
+           <StateItem>
+            <Name></Name>
+            <Options>0</Options>
+           </StateItem>
+          </Tree>
          </AreaCode>
          <AreaData>
           <Height>50</Height>
@@ -673,6 +883,14 @@
            <Column>0</Column>
            <Direction>1</Direction>
           </Sort>
+          <Tree>
+           <Reorder>1</Reorder>
+           <Selected></Selected>
+           <StateItem>
+            <Name></Name>
+            <Options>0</Options>
+           </StateItem>
+          </Tree>
          </AreaData>
          <ColumnWidth.0>
           <Pos type="D">0.0000000000000000</Pos>
@@ -698,6 +916,14 @@
            <Column>0</Column>
            <Direction>1</Direction>
           </Sort>
+          <Tree>
+           <Reorder>1</Reorder>
+           <Selected></Selected>
+           <StateItem>
+            <Name></Name>
+            <Options>0</Options>
+           </StateItem>
+          </Tree>
          </AreaAux>
          <AreaCode>
           <Height>50</Height>
@@ -709,6 +935,14 @@
            <Column>0</Column>
            <Direction>1</Direction>
           </Sort>
+          <Tree>
+           <Reorder>1</Reorder>
+           <Selected></Selected>
+           <StateItem>
+            <Name></Name>
+            <Options>0</Options>
+           </StateItem>
+          </Tree>
          </AreaCode>
          <AreaData>
           <Height>50</Height>
@@ -720,6 +954,14 @@
            <Column>0</Column>
            <Direction>1</Direction>
           </Sort>
+          <Tree>
+           <Reorder>1</Reorder>
+           <Selected></Selected>
+           <StateItem>
+            <Name></Name>
+            <Options>0</Options>
+           </StateItem>
+          </Tree>
          </AreaData>
          <ColumnWidth.0>
           <Pos type="D">0.0000000000000000</Pos>
@@ -746,7 +988,6 @@
          <ViewSettings>
           <CurrentContextIndex>65535</CurrentContextIndex>
           <HideAreasWithNoActivity>False</HideAreasWithNoActivity>
-          <ViewTitle>Profiler Timeline</ViewTitle>
           <Pane>
            <AreaAux>
             <Height>0</Height>
@@ -758,6 +999,14 @@
              <Column>0</Column>
              <Direction>1</Direction>
             </Sort>
+            <Tree>
+             <Reorder>1</Reorder>
+             <Selected></Selected>
+             <StateItem>
+              <Name></Name>
+              <Options>0</Options>
+             </StateItem>
+            </Tree>
            </AreaAux>
            <AreaCode>
             <Height>50</Height>
@@ -769,6 +1018,14 @@
              <Column>0</Column>
              <Direction>1</Direction>
             </Sort>
+            <Tree>
+             <Reorder>1</Reorder>
+             <Selected></Selected>
+             <StateItem>
+              <Name></Name>
+              <Options>0</Options>
+             </StateItem>
+            </Tree>
            </AreaCode>
            <AreaData>
             <Height>50</Height>
@@ -780,6 +1037,14 @@
              <Column>0</Column>
              <Direction>1</Direction>
             </Sort>
+            <Tree>
+             <Reorder>1</Reorder>
+             <Selected></Selected>
+             <StateItem>
+              <Name></Name>
+              <Options>0</Options>
+             </StateItem>
+            </Tree>
            </AreaData>
            <ColumnWidth.0>
             <Pos type="D">0.0000000000000000</Pos>
@@ -825,12 +1090,10 @@
          <StatAreaName></StatAreaName>
          <StatFromTime type="B">AAAAAAAAAAAAAAAA</StatFromTime>
          <StatFullName></StatFullName>
-         <StatToTime type="B">AAAAAAAAAAAAAAAA</StatToTime>
          <StatType>0</StatType>
          <CommonView>
           <CurrentContextIndex>65535</CurrentContextIndex>
           <HideAreasWithNoActivity>False</HideAreasWithNoActivity>
-          <ViewTitle>Profiler Statistics</ViewTitle>
           <Pane>
            <AreaAux>
             <Height>0</Height>
@@ -842,6 +1105,14 @@
              <Column>0</Column>
              <Direction>1</Direction>
             </Sort>
+            <Tree>
+             <Reorder>1</Reorder>
+             <Selected></Selected>
+             <StateItem>
+              <Name></Name>
+              <Options>0</Options>
+             </StateItem>
+            </Tree>
            </AreaAux>
            <AreaCode>
             <Height>50</Height>
@@ -853,6 +1124,14 @@
              <Column>0</Column>
              <Direction>1</Direction>
             </Sort>
+            <Tree>
+             <Reorder>1</Reorder>
+             <Selected></Selected>
+             <StateItem>
+              <Name></Name>
+              <Options>0</Options>
+             </StateItem>
+            </Tree>
            </AreaCode>
            <AreaData>
             <Height>50</Height>
@@ -864,6 +1143,14 @@
              <Column>0</Column>
              <Direction>1</Direction>
             </Sort>
+            <Tree>
+             <Reorder>1</Reorder>
+             <Selected></Selected>
+             <StateItem>
+              <Name></Name>
+              <Options>0</Options>
+             </StateItem>
+            </Tree>
            </AreaData>
            <ColumnWidth.0>
             <Pos type="D">0.0000000000000000</Pos>
@@ -894,7 +1181,7 @@
    </REG_HEADER>
    <REG_ROOT>
     <HServer>HGDB</HServer>
-    <RegVer>1279787008</RegVer>
+    <RegVer>1279660032</RegVer>
     <Cfg_System>
     </Cfg_System>
     <Desktop>
@@ -924,6 +1211,12 @@
        <RelativeFileName>..\test_disas_1.s</RelativeFileName>
       </EditorHistoryFile.3>
      </Documents.0>
+     <Progress>
+      <b>725</b>
+      <l>897</l>
+      <r>1393</r>
+      <t>373</t>
+     </Progress>
      <Watches>
       <Misc.0>
        <InitScript></InitScript>
@@ -946,6 +1239,7 @@
      </Watches4>
      <Workspace.0>
       <AreHorz>1</AreHorz>
+      <FullScreen>0</FullScreen>
       <Percent>0</Percent>
       <Type>0</Type>
       <TypeOfWnd>-1</TypeOfWnd>
@@ -1062,6 +1356,7 @@
         <Type>0</Type>
         <TypeOfWnd>5</TypeOfWnd>
         <Data>
+         <ShowHex>False</ShowHex>
          <HeaderWidth.0>
           <__>96</__>
          </HeaderWidth.0>
@@ -1069,8 +1364,11 @@
           <__>72</__>
          </HeaderWidth.1>
          <HeaderWidth.2>
-          <__>73</__>
+          <__>520</__>
          </HeaderWidth.2>
+         <HeaderWidth.3>
+          <__>0</__>
+         </HeaderWidth.3>
         </Data>
        </DockRect.8>
        <DockRect.9>
@@ -1107,7 +1405,7 @@
        <DockRect.2>
         <AreHorz>1</AreHorz>
         <Percent>100</Percent>
-        <strTypeOfWnd>Variables</strTypeOfWnd>
+        <strTypeOfWnd>Locals</strTypeOfWnd>
         <Type>0</Type>
         <TypeOfWnd>3</TypeOfWnd>
         <Data>
@@ -1116,20 +1414,20 @@
           <Width>180</Width>
          </Columns.0>
          <Columns.1>
-          <Pos type="D">20.4545454545454533</Pos>
+          <Pos type="D">37.1900826446280988</Pos>
           <Width>80</Width>
          </Columns.1>
          <Columns.2>
-          <Pos type="D">29.5454545454545467</Pos>
+          <Pos type="D">53.7190082644628077</Pos>
           <Width>80</Width>
          </Columns.2>
          <Columns.3>
-          <Pos type="D">38.6363636363636331</Pos>
+          <Pos type="D">70.2479338842975238</Pos>
           <Width>140</Width>
          </Columns.3>
          <Columns.4>
-          <Pos type="D">54.5454545454545467</Pos>
-          <Width>400</Width>
+          <Pos type="D">99.1735537190082681</Pos>
+          <Width>4</Width>
          </Columns.4>
         </Data>
        </DockRect.2>
@@ -1151,20 +1449,20 @@
           <Width>180</Width>
          </Columns.0>
          <Columns.1>
-          <Pos type="D">20.4545454545454533</Pos>
+          <Pos type="D">37.1900826446280988</Pos>
           <Width>80</Width>
          </Columns.1>
          <Columns.2>
-          <Pos type="D">29.5454545454545467</Pos>
+          <Pos type="D">53.7190082644628077</Pos>
           <Width>80</Width>
          </Columns.2>
          <Columns.3>
-          <Pos type="D">38.6363636363636331</Pos>
+          <Pos type="D">70.2479338842975238</Pos>
           <Width>140</Width>
          </Columns.3>
          <Columns.4>
-          <Pos type="D">54.5454545454545467</Pos>
-          <Width>400</Width>
+          <Pos type="D">99.1735537190082681</Pos>
+          <Width>4</Width>
          </Columns.4>
         </Data>
        </DockRect.4>
@@ -1183,494 +1481,6 @@
       </DockRect.3>
      </Workspace.0>
     </Desktop>
-    <DesktopGui>
-     <DataRevision>83219</DataRevision>
-     <FileHistory>
-      <FileHistoryEntries>
-       <__.0>
-        <RelativeFilePath>endlessCoverageTest.c</RelativeFilePath>
-       </__.0>
-       <__.1>
-        <RelativeFilePath>..\..\common\iTest\test_testing_cpp.h</RelativeFilePath>
-       </__.1>
-       <__.2>
-        <RelativeFilePath>..\..\common\iTest\test_testing_cpp.cpp</RelativeFilePath>
-       </__.2>
-       <__.3>
-        <RelativeFilePath>..\test_disas_1.s</RelativeFilePath>
-       </__.3>
-      </FileHistoryEntries>
-     </FileHistory>
-     <ToolbarData>
-      <Toolbars.0>
-       <Opened>true</Opened>
-      </Toolbars.0>
-      <Toolbars.1>
-       <Opened>true</Opened>
-      </Toolbars.1>
-      <Toolbars.2>
-       <Opened>true</Opened>
-      </Toolbars.2>
-      <Toolbars.3>
-       <Opened>true</Opened>
-      </Toolbars.3>
-     </ToolbarData>
-     <ViewData>
-      <AllViewBaseData>
-       <__.0>
-        <ViewId>-1</ViewId>
-        <ViewType>Project</ViewType>
-       </__.0>
-       <__.1>
-        <ViewId>-1</ViewId>
-        <ViewType>SFR</ViewType>
-       </__.1>
-       <__.2>
-        <ViewId>11</ViewId>
-        <ViewType>Disassembly</ViewType>
-       </__.2>
-       <__.3>
-        <ViewId>18</ViewId>
-        <ViewType>CoreRegisters</ViewType>
-       </__.3>
-       <__.4>
-        <ViewId>-1</ViewId>
-        <ViewType>Locals</ViewType>
-       </__.4>
-       <__.5>
-        <ViewId>22</ViewId>
-        <ViewType>CustomWatch</ViewType>
-       </__.5>
-       <__.6>
-        <ViewId>17</ViewId>
-        <ViewType>Output_Progress</ViewType>
-       </__.6>
-       <__.7>
-        <ViewId>12</ViewId>
-        <ViewType>Output</ViewType>
-       </__.7>
-       <__.8>
-        <ViewId>15</ViewId>
-        <ViewType>Symbols</ViewType>
-       </__.8>
-       <__.9>
-        <ViewId>20</ViewId>
-        <ViewType>Document</ViewType>
-       </__.9>
-      </AllViewBaseData>
-      <CoreRegisterViews>
-       <__.0>
-        <ShowHex>false</ShowHex>
-        <ViewId>18</ViewId>
-        <ViewType>CoreRegisters</ViewType>
-        <ColumnData>
-         <__.0>
-          <Pos>0</Pos>
-          <Width>0</Width>
-         </__.0>
-         <__.1>
-          <Pos>0</Pos>
-          <Width>122</Width>
-         </__.1>
-        </ColumnData>
-       </__.0>
-      </CoreRegisterViews>
-      <DissasemblyViews>
-       <__.0>
-        <ViewId>11</ViewId>
-        <ViewType>Disassembly</ViewType>
-        <ColumnData>
-         <__.0>
-          <Pos>0</Pos>
-          <Width>96</Width>
-         </__.0>
-         <__.1>
-          <Pos>0</Pos>
-          <Width>72</Width>
-         </__.1>
-         <__.2>
-          <Pos>0</Pos>
-          <Width>239</Width>
-         </__.2>
-        </ColumnData>
-       </__.0>
-      </DissasemblyViews>
-      <DocumentViews>
-       <__.0>
-        <RelativePath>cstartup.s</RelativePath>
-        <ViewId>20</ViewId>
-        <ViewType>Document</ViewType>
-       </__.0>
-      </DocumentViews>
-      <OtherViews>
-       <__.0>
-        <ViewId>15</ViewId>
-        <ViewType>Symbols</ViewType>
-       </__.0>
-      </OtherViews>
-      <OutputViews>
-       <__.0>
-        <ViewId>17</ViewId>
-        <ViewType>Output_Progress</ViewType>
-        <FindData>
-         <IsInReplaceMode>false</IsInReplaceMode>
-         <IsVisible>false</IsVisible>
-        </FindData>
-       </__.0>
-       <__.1>
-        <ViewId>12</ViewId>
-        <ViewType>Output</ViewType>
-        <FindData>
-         <IsInReplaceMode>false</IsInReplaceMode>
-         <IsVisible>false</IsVisible>
-        </FindData>
-       </__.1>
-      </OutputViews>
-      <ProjectViews>
-       <__.0>
-        <ViewId>-1</ViewId>
-        <ViewType>Project</ViewType>
-        <TreeState>
-         <ReorderItems>FALSE</ReorderItems>
-         <SelectedItems></SelectedItems>
-         <RootItem>
-          <Name></Name>
-          <Options>0</Options>
-          <ChildItems>
-           <__.0>
-            <Name>Files</Name>
-            <Options>4</Options>
-           </__.0>
-          </ChildItems>
-         </RootItem>
-        </TreeState>
-       </__.0>
-      </ProjectViews>
-      <SfrViews>
-       <__.0>
-        <CustomSfrName></CustomSfrName>
-        <IsCustomSfr>false</IsCustomSfr>
-        <ViewId>-1</ViewId>
-        <ViewType>SFR</ViewType>
-        <ColumnData.Address>
-         <Pos>0</Pos>
-         <Width>100</Width>
-        </ColumnData.Address>
-        <ColumnData.Description>
-         <Pos>0</Pos>
-         <Width>400</Width>
-        </ColumnData.Description>
-        <ColumnData.Name>
-         <Pos>0</Pos>
-         <Width>200</Width>
-        </ColumnData.Name>
-        <ColumnData.SubValue>
-         <Pos>0</Pos>
-         <Width>400</Width>
-        </ColumnData.SubValue>
-        <ColumnData.Value>
-         <Pos>0</Pos>
-         <Width>100</Width>
-        </ColumnData.Value>
-        <TreeState>
-         <ReorderItems>FALSE</ReorderItems>
-         <SelectedItems></SelectedItems>
-         <RootItem>
-          <Name></Name>
-          <Options>0</Options>
-         </RootItem>
-        </TreeState>
-       </__.0>
-      </SfrViews>
-      <VariableViews>
-       <__.0>
-        <ViewId>-1</ViewId>
-        <ViewType>Locals</ViewType>
-        <ColumnData>
-         <__.0>
-          <Pos>0</Pos>
-          <Width>180</Width>
-         </__.0>
-         <__.1>
-          <Pos>0</Pos>
-          <Width>80</Width>
-         </__.1>
-         <__.2>
-          <Pos>0</Pos>
-          <Width>80</Width>
-         </__.2>
-         <__.3>
-          <Pos>0</Pos>
-          <Width>140</Width>
-         </__.3>
-         <__.4>
-          <Pos>0</Pos>
-          <Width>222</Width>
-         </__.4>
-        </ColumnData>
-       </__.0>
-      </VariableViews>
-      <WatchViews>
-       <__.0>
-        <ViewId>22</ViewId>
-        <ViewType>CustomWatch</ViewType>
-        <WatchName>Watch 1</WatchName>
-        <ColumnData>
-         <__.0>
-          <Pos>0</Pos>
-          <Width>180</Width>
-         </__.0>
-         <__.1>
-          <Pos>0</Pos>
-          <Width>80</Width>
-         </__.1>
-         <__.2>
-          <Pos>0</Pos>
-          <Width>80</Width>
-         </__.2>
-         <__.3>
-          <Pos>0</Pos>
-          <Width>140</Width>
-         </__.3>
-         <__.4>
-          <Pos>0</Pos>
-          <Width>0</Width>
-         </__.4>
-        </ColumnData>
-        <WatchData>
-         <MiscData>
-          <InitScript></InitScript>
-         </MiscData>
-         <PaneMiscData.0>
-          <InitScript></InitScript>
-         </PaneMiscData.0>
-         <PaneMiscData.1>
-          <InitScript></InitScript>
-         </PaneMiscData.1>
-         <PaneMiscData.2>
-          <InitScript></InitScript>
-         </PaneMiscData.2>
-         <PaneMiscData.3>
-          <InitScript></InitScript>
-         </PaneMiscData.3>
-         <VariableData>
-          <IsRealTimeEnabled>false</IsRealTimeEnabled>
-          <Variables>
-           <__.0>
-            <Name> isDebugTest</Name>
-            <ExpressionDisplay>
-             <Color>FALSE</Color>
-             <ColorBack>16777215</ColorBack>
-             <ColorText>0</ColorText>
-             <Enabled>FALSE</Enabled>
-             <Hi>100</Hi>
-             <Lo>0</Lo>
-             <Scale>Linear</Scale>
-            </ExpressionDisplay>
-           </__.0>
-           <__.1>
-            <Name>iCounter</Name>
-            <ExpressionDisplay>
-             <Color>FALSE</Color>
-             <ColorBack>16769216</ColorBack>
-             <ColorText>0</ColorText>
-             <Enabled>FALSE</Enabled>
-             <Hi>100</Hi>
-             <Lo>0</Lo>
-             <Scale>Linear</Scale>
-            </ExpressionDisplay>
-           </__.1>
-          </Variables>
-         </VariableData>
-         <WatchPaneData.0>
-          <IsRealTimeEnabled>false</IsRealTimeEnabled>
-          <Variables>
-           <__.0>
-            <Name> isDebugTest</Name>
-            <ExpressionDisplay>
-             <Color>FALSE</Color>
-             <ColorBack>16777215</ColorBack>
-             <ColorText>0</ColorText>
-             <Enabled>FALSE</Enabled>
-             <Hi>100</Hi>
-             <Lo>0</Lo>
-             <Scale>Linear</Scale>
-            </ExpressionDisplay>
-           </__.0>
-           <__.1>
-            <Name>iCounter</Name>
-            <ExpressionDisplay>
-             <Color>FALSE</Color>
-             <ColorBack>16769216</ColorBack>
-             <ColorText>0</ColorText>
-             <Enabled>FALSE</Enabled>
-             <Hi>100</Hi>
-             <Lo>0</Lo>
-             <Scale>Linear</Scale>
-            </ExpressionDisplay>
-           </__.1>
-          </Variables>
-         </WatchPaneData.0>
-         <WatchPaneData.1>
-          <IsRealTimeEnabled>false</IsRealTimeEnabled>
-         </WatchPaneData.1>
-         <WatchPaneData.2>
-          <IsRealTimeEnabled>false</IsRealTimeEnabled>
-         </WatchPaneData.2>
-         <WatchPaneData.3>
-          <IsRealTimeEnabled>false</IsRealTimeEnabled>
-         </WatchPaneData.3>
-        </WatchData>
-       </__.0>
-      </WatchViews>
-     </ViewData>
-     <ViewLayout>
-      <PrimaryDocumentPaneId>9</PrimaryDocumentPaneId>
-      <Frames>
-       <__.0>
-        <FocusedViewId>22</FocusedViewId>
-        <FrameState>9</FrameState>
-        <IsPrimary>true</IsPrimary>
-        <Bounds>
-         <Bottom>1054</Bottom>
-         <Left>497</Left>
-         <Right>1920</Right>
-         <Top>6</Top>
-        </Bounds>
-        <Dock>
-         <DockType>None</DockType>
-         <Extent>0</Extent>
-         <IsDocumentPane>false</IsDocumentPane>
-         <IsPinned>false</IsPinned>
-         <IsTabbed>false</IsTabbed>
-         <Orientation>Horizontal</Orientation>
-         <TopTabViewId>-1</TopTabViewId>
-         <ViewId>-1</ViewId>
-         <Children>
-          <__.0>
-           <DockType>None</DockType>
-           <Extent>0.196791</Extent>
-           <IsDocumentPane>false</IsDocumentPane>
-           <IsPinned>false</IsPinned>
-           <IsTabbed>false</IsTabbed>
-           <Orientation>Vertical</Orientation>
-           <TopTabViewId>-1</TopTabViewId>
-           <ViewId>-1</ViewId>
-           <Children>
-            <__.0>
-             <DockType>View</DockType>
-             <Extent>0.569295</Extent>
-             <IsDocumentPane>false</IsDocumentPane>
-             <IsPinned>false</IsPinned>
-             <IsTabbed>false</IsTabbed>
-             <Orientation>None</Orientation>
-             <TopTabViewId>-1</TopTabViewId>
-             <ViewId>15</ViewId>
-            </__.0>
-            <__.1>
-             <DockType>None</DockType>
-             <Extent>0.430705</Extent>
-             <IsDocumentPane>false</IsDocumentPane>
-             <IsPinned>false</IsPinned>
-             <IsTabbed>true</IsTabbed>
-             <Orientation>None</Orientation>
-             <TopTabViewId>17</TopTabViewId>
-             <ViewId>-1</ViewId>
-             <Children>
-              <__.0>
-               <DockType>View</DockType>
-               <Extent>0.333333</Extent>
-               <IsDocumentPane>false</IsDocumentPane>
-               <IsPinned>false</IsPinned>
-               <IsTabbed>false</IsTabbed>
-               <Orientation>None</Orientation>
-               <TopTabViewId>-1</TopTabViewId>
-               <ViewId>12</ViewId>
-              </__.0>
-              <__.1>
-               <DockType>View</DockType>
-               <Extent>1</Extent>
-               <IsDocumentPane>false</IsDocumentPane>
-               <IsPinned>false</IsPinned>
-               <IsTabbed>false</IsTabbed>
-               <Orientation>None</Orientation>
-               <TopTabViewId>-1</TopTabViewId>
-               <ViewId>17</ViewId>
-              </__.1>
-             </Children>
-            </__.1>
-           </Children>
-          </__.0>
-          <__.1>
-           <DockType>None</DockType>
-           <Extent>0.433318</Extent>
-           <IsDocumentPane>true</IsDocumentPane>
-           <IsPinned>false</IsPinned>
-           <IsTabbed>true</IsTabbed>
-           <Orientation>None</Orientation>
-           <TopTabViewId>20</TopTabViewId>
-           <ViewId>-1</ViewId>
-           <Children>
-            <__.0>
-             <DockType>Document</DockType>
-             <Extent>1</Extent>
-             <IsDocumentPane>false</IsDocumentPane>
-             <IsPinned>false</IsPinned>
-             <IsTabbed>false</IsTabbed>
-             <Orientation>None</Orientation>
-             <TopTabViewId>-1</TopTabViewId>
-             <ViewId>20</ViewId>
-            </__.0>
-           </Children>
-          </__.1>
-          <__.2>
-           <DockType>View</DockType>
-           <Extent>0.0585626</Extent>
-           <IsDocumentPane>false</IsDocumentPane>
-           <IsPinned>false</IsPinned>
-           <IsTabbed>false</IsTabbed>
-           <Orientation>Vertical</Orientation>
-           <TopTabViewId>-1</TopTabViewId>
-           <ViewId>18</ViewId>
-          </__.2>
-          <__.3>
-           <DockType>None</DockType>
-           <Extent>0.311328</Extent>
-           <IsDocumentPane>false</IsDocumentPane>
-           <IsPinned>false</IsPinned>
-           <IsTabbed>false</IsTabbed>
-           <Orientation>Vertical</Orientation>
-           <TopTabViewId>-1</TopTabViewId>
-           <ViewId>-1</ViewId>
-           <Children>
-            <__.0>
-             <DockType>View</DockType>
-             <Extent>0.5</Extent>
-             <IsDocumentPane>false</IsDocumentPane>
-             <IsPinned>false</IsPinned>
-             <IsTabbed>false</IsTabbed>
-             <Orientation>None</Orientation>
-             <TopTabViewId>-1</TopTabViewId>
-             <ViewId>11</ViewId>
-            </__.0>
-            <__.1>
-             <DockType>View</DockType>
-             <Extent>0.5</Extent>
-             <IsDocumentPane>false</IsDocumentPane>
-             <IsPinned>false</IsPinned>
-             <IsTabbed>false</IsTabbed>
-             <Orientation>Vertical</Orientation>
-             <TopTabViewId>-1</TopTabViewId>
-             <ViewId>22</ViewId>
-            </__.1>
-           </Children>
-          </__.3>
-         </Children>
-        </Dock>
-       </__.0>
-      </Frames>
-     </ViewLayout>
-    </DesktopGui>
     <Environment>
      <Breakpoints>
       <Fetch>
@@ -1712,7 +1522,7 @@
         <OptimizeTypeByName>0</OptimizeTypeByName>
         <OverrideMemoryArea>0</OverrideMemoryArea>
         <Path>Debug\Sample.out</Path>
-        <ProjectOutputFile>0</ProjectOutputFile>
+        <ProjectOutputFile>1</ProjectOutputFile>
         <SOffset>0</SOffset>
         <SOffsetA type="B">AAAAAAAAAAAAAAAA</SOffsetA>
         <TargetRelative>True</TargetRelative>
@@ -1744,7 +1554,6 @@
          <Override64bitVariableLocation>1</Override64bitVariableLocation>
          <RemoveOptimizedLines>1</RemoveOptimizedLines>
          <ReverseBitFields>0</ReverseBitFields>
-         <UseSymbolTableForVariablesWithNoLocation>1</UseSymbolTableForVariablesWithNoLocation>
          <Cosmic>
           <nowidden>FALSE</nowidden>
           <sprec>FALSE</sprec>
@@ -1784,6 +1593,9 @@
         <VerifyErrors>true</VerifyErrors>
        </LoadReport>
       </DownloadOptionsData>
+      <MemoryRegion>
+       <FullAccessOutside>true</FullAccessOutside>
+      </MemoryRegion>
       <mode0>
        <GlobalProperty>0</GlobalProperty>
        <IgnoreDLInfo>0</IgnoreDLInfo>
@@ -2094,7 +1906,7 @@
       </Combo>
      </History>
      <Info>
-      <winIDEA>Build 9.17.128</winIDEA>
+      <winIDEA>Build 9.17.97</winIDEA>
      </Info>
      <Options>
       <CallstackWindow>
@@ -2173,9 +1985,6 @@
         <XON_XOFF>0</XON_XOFF>
        </SessionOptions>
       </TerminalWindow>
-      <UIPreferences>
-       <DialogHexEval>false</DialogHexEval>
-      </UIPreferences>
      </Options>
      <SourceControl>
       <CheckInFilesWhenClosingWorkspace>0</CheckInFilesWhenClosingWorkspace>
@@ -2251,6 +2060,7 @@
        <FindValueType>0</FindValueType>
        <Format>0</Format>
        <FSA type="B">AEAAAAAAAAAAAAAA</FSA>
+       <HexList>False</HexList>
        <HexSaveAddress>False</HexSaveAddress>
        <HexSaveSize>True</HexSaveSize>
        <MAUsPerLine>16</MAUsPerLine>
@@ -2302,7 +2112,7 @@
     <VersionLow>1</VersionLow>
    </REG_HEADER>
    <REG_ROOT>
-    <RegVer>1279787008</RegVer>
+    <RegVer>1279660032</RegVer>
     <Project_Local>
      <Project.0>
       <DefaultTargetName>Debug</DefaultTargetName>
@@ -2317,7 +2127,7 @@
     <VersionLow>1</VersionLow>
    </REG_HEADER>
    <REG_ROOT>
-    <RegVer>1279787008</RegVer>
+    <RegVer>1279660032</RegVer>
     <Data>
      <Attach>false</Attach>
      <Target_._IP>127.0.0.1</Target_._IP>

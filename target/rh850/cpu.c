@@ -674,6 +674,7 @@ static void rh850_cpu_init(Object *obj)
     CPUState *cs = CPU(obj);
     RH850CPU *cpu = RH850_CPU(obj);
 
+    cpu_set_cpustate_pointers(cpu); // all targets call that
     cs->env_ptr = &cpu->env;
 }
 
