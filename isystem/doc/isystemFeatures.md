@@ -1,6 +1,7 @@
 This file lists most important features and fixes added by iSYSTEM Labs
 
-1. eb7a810008896c6b6514dff77caa372c7b55ab38
+1. Also fixed in version 4.x, merge no longer needed.
+   eb7a810008896c6b6514dff77caa372c7b55ab38
    Fixed `stm` instruction for ARMv6M - base register is incremented also when 
    it is in reg. list.
 
@@ -24,6 +25,10 @@ This file lists most important features and fixes added by iSYSTEM Labs
      hw/rh850/rh850mini.c
      qemu-options.hx
      vl.c
+
+5. Fixed netduino2 so that shadow FLASH is properly used. See
+   netduino2.c. This change was rejected by maintainers, since proper
+   change would need complex changes deep in QEMU.
 
 To see list of all changed files:
 
