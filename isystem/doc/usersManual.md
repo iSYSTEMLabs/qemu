@@ -4,7 +4,7 @@ Overview
 --------
 
 [QEMU](https://www.qemu.org/) is a generic and open source machine emulator and
-virtualizer. iSYSTEM tools can connect to QEMU device via GDB interface.  This
+virtualizer. iSYSTEM tools can connect to QEMU instance via GDB interface.  This
 way winIDEA can be used to debug software, and testIDEA to execute unit tests.
 While QEMU is not full replacement for real hardware, it can be used for
 development and testing of code, which is not hardware dependent (functions
@@ -25,12 +25,12 @@ for development team, which is an additional advantage.
 iSYSTEM distribution of QEMU
 --------
 
-Since version 9.17.148, winIDEA comes with QEMU inclulded in the distribution,
+Since version 9.17.148, winIDEA comes with QEMU included in the distribution,
 so you do not have to install it yourself. Version of QEMU distributed with
 iSYSTEM tools is based on open source [QEMU](https://www.qemu.org/), and supports:
 
 - devices based on ARM cores (arm-softmmu, aarch64-softmmu). These devices
-  are the same available in the official QEMU release. 
+  are the same as available in the official QEMU release. 
 - V850E4 core (Renesas RH850 family). These devices are implemented by 
   iSYSTEM, and contain only core and memory, no peripherals are emulated. 
 
@@ -59,12 +59,12 @@ winIDEA Configuration
 --------
 
 To use QEMU, only winIDEA has to be configured. testIDEA uses 
-device agnostic interface called _isystem.connect_ to connect to winIDEA. It
-doesn't care if tests are run in emulator or on physical hardware.
+device agnostic interface called _isystem.connect_ to connect to winIDEA,
+and does not depend on testing backend.
 
 Good starting point for winIDEA configuration is workspace, which is already
-configured for your physical target, but this is not required. Description 
-below covers also this case.
+configured for your physical target, but this is not required. The description 
+below covers both cases.
 
 ### 1. Make sure your winIDEA workspace is configured as Multi-Application workspace
 
@@ -110,7 +110,7 @@ below covers also this case.
 
    __Note:__ Some machines specify core name as iSYSTEM device, for example:
 
-       raspi2 (__Cortex-A53__)
+       raspi2 (Cortex-A53)
 
    In such cases winIDEA will properly show disassembly and core registers, but
    it does not know details about specific SoC, so SFRs are not available.
@@ -145,15 +145,16 @@ below covers also this case.
 
    Every time you run QEMU wizard as described above, the wizard sets QEMU
    command line parameters. If you'd like to add your own parameters or change
-   ones set by the wizard, then select `GDB | Options...` in winIDEA.
+   the ones set by the wizard, then select `GDB | Options...` in winIDEA.
    Select tab `Simulator` and edit _Parameters_. Macro `$(DefaultDownloadFile)`
    contains path to file added to _Program Files_ list above.
 
    ![Simulator Options Dialog](images/simulatorOptionsDialog.png)
 
    If you'd like use other version of QEMU than the one provided with winIDEA, 
-   set its path in field `Executable`.
+   set its path in field _Executable_.
 
+   __IMPORTANT:__ If you start wizard again, custom settings will be lost.
 
 testIDEA usage
 --------------
