@@ -100,13 +100,10 @@ static void stm32f205_soc_realize(DeviceState *dev_soc, Error **errp)
     MemoryRegion *flash = g_new(MemoryRegion, 1);
     MemoryRegion *flash_alias = g_new(MemoryRegion, 1);
 
-    memory_region_init_ram(flash, NULL, "STM32F205.flash", flash_size,
-                           &error_fatal);
-    memory_region_init_alias(flash_alias, NULL, "STM32F205.flash.alias",
-                             flash, 0, flash_size);
-
-    memory_region_set_readonly(flash, true);
-    memory_region_set_readonly(flash_alias, true);
+    memory_region_init_rom(flash, OBJECT(dev_soc), "STM32F205.flash", 
+                           flash_size, &error_fatal);
+    memory_region_init_alias(flash_alias, OBJECT(dev_soc), 
+                             "STM32F205.flash.alias", flash, 0, flash_size);
 
     memory_region_add_subregion(system_memory, flash_base_addr, flash);
     memory_region_add_subregion(system_memory, flash_alias_base_addr, flash_alias);
@@ -214,7 +211,7 @@ static void stm32f205_soc_class_init(ObjectClass *klass, void *data)
     DeviceClass *dc = DEVICE_CLASS(klass);
 
     dc->realize = stm32f205_soc_realize;
-    dc->props = stm32f205_soc_properties;
+    device_class_set_props(dc, stm32f205_soc_properties);
 }
 
 static const TypeInfo stm32f205_soc_info = {
