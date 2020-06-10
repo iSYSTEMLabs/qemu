@@ -135,7 +135,7 @@ static void rh850_soc_class_init(ObjectClass *klass, void *data)
     DeviceClass *dc = DEVICE_CLASS(klass);
 
     dc->realize = rh850_soc_realize;
-    dc->props = rh850_soc_properties;
+    device_class_set_props(dc, rh850_soc_properties);
 }
 
 static const TypeInfo rh850_soc_info = {

@@ -497,27 +497,14 @@ ERST
 DEF("flash", HAS_ARG, QEMU_OPTION_flash,
     "-flash [size0=]bytes[,start0=n[ .. ,size4=bytes[,start4=bytes]]]\n"
     "                configure FLASH in SoC.\n"
-    "                size: amount of guest memory (size of FLASH in SoC, default: 2M).\n"
     "                start: start address of FLASH (default: 0)\n"
+    "                size: amount of guest memory (size of FLASH in SoC, default: 2M).\n"
     "                sizeN and startN can be specified to allocate another block of flash.\n"
     "                If size is set to 0, then memory block is not allocated.\n"
-    "                Use 'k', 'M', or 'G' for kilo, Mega and Giga, size or start.",
+    "                A suffix of ``k``, ``M'' or ``G'' can be used to signify a value in\n"
+    "                kilobytes, megabytes or gigabytes respectively.\n"
+    "                Example: qemu-system-rh850 -flash start=0x8000000,size=2M",
     QEMU_ARCH_ALL)
-STEXI
-@item -flash [size=]@var{megs}[,start=n]
-@findex -flash
-Sets guest FLASH size to @var{megs} megabytes. Default is 1 MiB.
-Optionally, a suffix of ``k``, ``M'' or ``G'' can be used to signify a value in
-kilobytes, megabytes or gigabytes respectively. Optional @var{start}
-could be used to set start address of FLASH memory in SoC.
-
-For example, the following command-line sets the guest FLASH size to
-2MB, and sets the start address to 0x0800'0000:
-
-@example
-qemu-system-rh850 -flash 2M,start=0x8000000
-@end example
-ETEXI
 
 DEF("ram", HAS_ARG, QEMU_OPTION_ram,
     "-ram [size0=]bytes[,start0=n[..,size4=bytes[,start4=bytes]]]\n"
@@ -526,23 +513,10 @@ DEF("ram", HAS_ARG, QEMU_OPTION_ram,
     "                start: start address of RAM (default depends on machine)\n"
     "                sizeN and startN can be specified to allocate another block of RAM.\n"
     "                If size is set to 0, then memory block is not allocated.\n"
-    "                Use 'k', 'M', or 'G' for kilo, Mega and Giga, size or start.",
+    "                A suffix of ``k``, ``M'' or ``G'' can be used to signify a value in\n"
+    "                kilobytes, megabytes or gigabytes respectively.\n"
+    "                Example: qemu-system-rh850 -ram start=0x20000000,size=64k",
     QEMU_ARCH_ALL)
-STEXI
-@item -ram [size=]@var{megs}[,start=n]
-@findex -ram
-Sets guest RAM size to @var{kilos} kilobytes. Default is 64 KiB.
-Optionally, a suffix of ``k``, ``M'' or ``G'' can be used to signify a value in
-kilobytes, megabytes or gigabytes respectively. Optional @var{start}
-could be used to set start address of RAM memory in SoC.
-
-For example, the following command-line sets the guest RAM size to
-128MB, and sets the start address to 0x2000'0000:
-
-@example
-qemu-system-rh850 -ram 128k,start=0x20000000
-@end example
-ETEXI
 
 DEF("mem-path", HAS_ARG, QEMU_OPTION_mempath,
     "-mem-path FILE  provide backing storage for guest RAM\n", QEMU_ARCH_ALL)

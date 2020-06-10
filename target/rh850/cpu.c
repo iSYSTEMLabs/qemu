@@ -601,18 +601,18 @@ static bool rh850_debug_check_watchpoint(CPUState *cs, CPUWatchpoint *wp)
 }
 
 
-static void rh850_cpu_reset(CPUState *cs)
+static void rh850_cpu_reset(DeviceState *dev)
 {
-
-	RH850CPU *cpu = RH850_CPU(cs);
+    CPUState *s = CPU(dev);
+	RH850CPU *cpu = RH850_CPU(s);
     RH850CPUClass *mcc = RH850_CPU_GET_CLASS(cpu);
     CPURH850State *env = &cpu->env;
 
-    mcc->parent_reset(cs);
+    mcc->parent_reset(dev);
 #ifndef CONFIG_USER_ONLY
     env->mstatus &= ~(MSTATUS_MIE | MSTATUS_MPRV); //
 #endif
-    cs->exception_index = EXCP_NONE;
+    s->exception_index = EXCP_NONE;
     set_default_nan_mode(1, &env->fp_status);
     env->pc = 0;
     env->ID_flag = 1;   // interrupts are disable on reset
@@ -692,8 +692,7 @@ static void rh850_cpu_class_init(ObjectClass *c, void *data)
     mcc->parent_realize = dc->realize;
     dc->realize = rh850_cpu_realize;
 
-    mcc->parent_reset = cc->reset;
-    cc->reset = rh850_cpu_reset;
+    device_class_set_parent_reset(dc, rh850_cpu_reset, &mcc->parent_reset);
 
     cc->class_by_name = rh850_cpu_class_by_name;
     cc->has_work = rh850_cpu_has_work;

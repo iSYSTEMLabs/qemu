@@ -98,17 +98,17 @@ SRI2(MEI_IDX2), -1,       -1,          -1,          -1,          -1,          -1
 
 const int NUM_GDB_REGS = sizeof(winIdeaRegIdx2qemuSysRegIdx) / sizeof(IdxType);
 
-int rh850_cpu_gdb_read_register(CPUState *cs, uint8_t *mem_buf, int n)
+int rh850_cpu_gdb_read_register(CPUState *cs, GByteArray *mem_buf, int reg)
 {
     RH850CPU *cpu = RH850_CPU(cs);
     CPURH850State *env = &cpu->env;
 
-    if (n < 32) {
-        return gdb_get_regl(mem_buf, env->gpRegs[n]);  //gpr is now supposed to be progRegs
-    } else if (n == 64) {
+    if (reg < 32) {
+        return gdb_get_regl(mem_buf, env->gpRegs[reg]);  //gpr is now supposed to be progRegs
+    } else if (reg == 64) {
         return gdb_get_regl(mem_buf, env->pc);
-    } else if (n < NUM_GDB_REGS) {
-    	int sysRegIdx = winIdeaRegIdx2qemuSysRegIdx[n];
+    } else if (reg < NUM_GDB_REGS) {
+    	int sysRegIdx = winIdeaRegIdx2qemuSysRegIdx[reg];
     	if (sysRegIdx >= 0) {
             int selID = sysRegIdx >> BANK_SHIFT;
             int regID = sysRegIdx & ~BANK_MASK;

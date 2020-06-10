@@ -216,7 +216,7 @@ typedef struct RH850CPUClass {
     CPUClass parent_class;
     /*< public >*/
     DeviceRealize parent_realize;
-    void (*parent_reset)(CPUState *cpu);
+    DeviceReset parent_reset;
 } RH850CPUClass;
 
 /**
@@ -267,7 +267,7 @@ extern const uint32_t rh850_sys_reg_read_only_masks[][MAX_SYS_REGS_IN_BANK];
 #define ENV_OFFSET offsetof(RH850CPU, env)
 
 void rh850_cpu_do_interrupt(CPUState *cpu);
-int rh850_cpu_gdb_read_register(CPUState *cpu, uint8_t *buf, int reg);
+int rh850_cpu_gdb_read_register(CPUState *cpu, GByteArray *buf, int reg);
 int rh850_cpu_gdb_write_register(CPUState *cpu, uint8_t *buf, int reg);
 bool rh850_cpu_exec_interrupt(CPUState *cs, int interrupt_request);
 int rh850_cpu_mmu_index(CPURH850State *env, bool ifetch);
