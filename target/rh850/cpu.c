@@ -689,8 +689,8 @@ static void rh850_cpu_class_init(ObjectClass *c, void *data)
     CPUClass *cc = CPU_CLASS(c);
     DeviceClass *dc = DEVICE_CLASS(c);
 
-    mcc->parent_realize = dc->realize;
-    dc->realize = rh850_cpu_realize;
+    device_class_set_parent_realize(dc, rh850_cpu_realize,
+                                    &mcc->parent_realize);
 
     device_class_set_parent_reset(dc, rh850_cpu_reset, &mcc->parent_reset);
 
@@ -729,6 +729,8 @@ static void rh850_cpu_class_init(ObjectClass *c, void *data)
 #endif
     /* For now, mark unmigratable: */
     cc->vmsd = &vmstate_rh850_cpu;
+
+    // device_class_set_props(dc, riscv_cpu_properties);
 }
 
 char *rh850_isa_string(RH850CPU *cpu)
