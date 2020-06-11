@@ -124,7 +124,8 @@ int rh850_cpu_gdb_read_register(CPUState *cs, GByteArray *mem_buf, int reg)
     	}
     }
 
-    *((uint32_t *)mem_buf) = 0xBAD0BAD0;
+    uint32_t to_long = tswap32(0xBAD0BAD0);
+    g_byte_array_append(mem_buf, (uint8_t *) &to_long, 4);
     return 4; // registers in slots not set above are ignored
 }
 
