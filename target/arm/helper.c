@@ -231,6 +231,19 @@ static int arm_gdb_get_sysreg(CPUARMState *env, GByteArray *buf, int reg)
 
 static int arm_gdb_set_sysreg(CPUARMState *env, uint8_t *buf, int reg)
 {
+    ARMCPU *cpu = env_archcpu(env);
+    const ARMCPRegInfo *ri;
+    uint32_t key;
+
+    key = cpu->dyn_sysreg_xml.data.cpregs.keys[reg];
+    ri = get_arm_cp_reginfo(cpu->cp_regs, key);
+    if (ri) {
+        uint64_t value = ldl_p(buf);
+        write_raw_cp_reg(&cpu->env, ri, value);
+        if (read_raw_cp_reg(&cpu->env, ri) == value) {
+            return 8;
+        }
+    }
     return 0;
 }
 
