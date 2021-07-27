@@ -5,7 +5,7 @@
 #include "qemu/option.h"
 #include "qemu/option_int.h"
 #include "qemu/config-file.h"
-#include "qemu-options.h"
+#include "include/qemu/qemu-options.h"
 
 
 static void get_option_value(QemuOpts *subopts, uint32_t *opt_value, const char *opt_name) {

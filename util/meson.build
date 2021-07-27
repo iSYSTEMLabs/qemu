@@ -66,6 +66,7 @@ if have_block
   util_ss.add(files('hbitmap.c'))
   util_ss.add(files('hexdump.c'))
   util_ss.add(files('iova-tree.c'))
+  util_ss.add(files('soc-options.c'))
   util_ss.add(files('iov.c', 'qemu-sockets.c', 'uri.c'))
   util_ss.add(files('lockcnt.c'))
   util_ss.add(files('main-loop.c'))
